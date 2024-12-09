@@ -1,0 +1,244 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, section, footer {
+    width: 100%;
+}
+
+/* Баннер */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 469px;
+    background: url('img/banner.png') no-repeat center center;
+    background-size: cover;
+}
+
+.language-switch {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 12px;
+}
+
+.language-switch a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* Раздел "Наши Партнёры" */
+.partners {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.partners2 {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.partner-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Расстояние между партнёрами */
+}
+
+.partner-item {
+    text-align: center; /* Центрируем текст под логотипом */
+}
+
+.partner-logo {
+    width: 160px; /* Размер логотипа */
+    height: 89px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+    transform: scale(1.1);
+}
+
+.partner-name {
+    margin-top: 40px; /* Отступ от логотипа */
+    font-size: 20px;
+    color: #333; /* Цвет текста */
+    font-weight: lighter;
+}
+
+
+
+/* Стили для блока "О нас" */
+.about {
+    background-color: #f0f0f0; /* Серый фон */
+    padding: 40px 20px; /* Отступы сверху и снизу */
+    text-align: center;
+    font-family: "Arial", sans-serif; /* Основной шрифт */
+}
+
+/* Заголовок блока "О нас" */
+.about h2 {
+    font-size: 24px; /* Размер заголовка */
+    font-weight: bold;
+    color: #000; /* Темно-серый цвет */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Текст абзацев в блоке "О нас" */
+.about-text {
+    font-size: 24px; /* Размер шрифта текста */
+    line-height: 1.8; /* Высота строки */
+    color: #000; /* Серый цвет текста */
+    margin-bottom: 20px; /* Отступ между абзацами */
+    text-align: center; /* Текст по центру */
+    max-width: 1100px; /* Ограничение ширины текста */
+    margin-left: auto;
+    margin-right: auto; /* Центрирование текста */
+}
+
+/* Дополнительный стиль для акцентов */
+.about-text strong {
+    font-weight: bold;
+    color: #000; /* Более темный цвет для выделения */
+}
+
+
+/* Блок "Чемпионат Мира" */
+.championship {
+    padding: 50px 20px; /* Отступы вокруг блока */
+    text-align: center; /* Центрирование текста */
+    background-color: #f0f0f0; /* Белый фон */
+    padding: 40px 0px 100px;
+}
+
+/* Заголовок блока */
+.championship h2 {
+    font-size: 32px; /* Размер заголовка */
+    font-weight: bold; /* Жирный шрифт */
+    margin-bottom: 80px; /* Отступ снизу */
+    color: #000; /* Черный текст */
+}
+
+/* Ссылки в ряд */
+.championship-links {
+    display: flex;
+    justify-content: center; /* Выравнивание по центру */
+    gap: 100px; /* Расстояние между элементами */
+}
+
+.championship-item {
+    font-size: 24px; /* Размер текста */
+    color: #000; /* Черный цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    text-align: center; /* Центрируем текст */
+    transition: color 0.3s ease; /* Анимация при наведении */
+    font-weight: lighter;
+}
+
+/* Эффект при наведении */
+.championship-item:hover {
+    color: #0d151e6a; /* Синий цвет при наведении */
+}
+
+
+/* Подвал */
+.footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .icon {
+    margin: 0 15px;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+
+
+/* AAAAAAAAA
+
+/* Общий стиль секции */
+.gallery-slider {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.gallery-slider h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #000;
+    text-align: center; /* Выравниваем текст по центру */
+    font-weight: 300;
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    text-align: center; /* Выравниваем текст по центру */
+    font-size: 36px; /* Размер шрифта */
+    font-weight: bold; /* Жирный текст */
+    margin: 40px 0; /* Отступы сверху и снизу */
+    color: #000000; /* Цвет текста */
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+}
+
+
+/* Контейнер слайдера */
+.slider-container {
+    position: relative;
+    width: 800px; /* Фиксированная ширина */
+    height: 566px; /* Фиксированная высота */
+    margin: 0 auto; /* Центрирование */
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Слайды */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 800px; /* Размер изображения */
+    height: 566px;
+    flex-shrink: 0;
+}
+
+/* Кнопки навигации */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моменты Чемпионата</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Церемония Награждения</h1>
+    </header>
+
+    <!-- Секция слайдера -->
+    <section class="gallery-slider">
+        <h2>Моменты Церемонии Награждения. День 1.</h2>
+        <div class="slider-container" id="slider-day1">
+            <div class="slider">
+                <img src="img/moments1.png" alt="Фото 1">
+                <img src="img/moments2.png" alt="Фото 2">
+                <img src="img/moments3.png" alt="Фото 3">
+            </div>
+            <button class="prev" onclick="prevSlide('slider-day1')">&#10094;</button>
+            <button class="next" onclick="nextSlide('slider-day1')">&#10095;</button>
+        </div>
+    </section>
+    
+    <section class="gallery-slider">
+        <h2>Моменты Церемонии Награждения. День 2.</h2>
+        <div class="slider-container" id="slider-day2">
+            <div class="slider">
+                <img src="img/moments_1.jpg" alt="Фото 1">
+                <img src="img/moments_2.jpg" alt="Фото 2">
+                <img src="img/moments_3.jpg" alt="Фото 3">
+            </div>
+            <button class="prev" onclick="prevSlide('slider-day2')">&#10094;</button>
+            <button class="next" onclick="nextSlide('slider-day2')">&#10095;</button>
+        </div>
+
+    <section class="partners2">
+        <h2>Наши Партнёры</h2>
+        <div class="partner-links">
+            <div class="partner-item">
+                <a href="https://sk.kz/" target="_blank">
+                    <img src="img/samruk.png" alt="Партнёр 1" class="partner-logo">
+                </a>
+                <p class="partner-name">ГЕНЕРАЛЬНЫЙ ПАРТНЁР</p>
+            </div>
+            <div class="partner-item">
+                <a href="https://sportqory.kz/ru" target="_blank">
+                    <img src="img/sportqory.png" alt="Партнёр 2" class="partner-logo">
+                </a>
+                <p class="partner-name">ПАРТНЁР</p>
+            </div>
+        </div>
+    </section>
+</section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <a href="https://instagram.com" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:info@example.com" class="icon"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/1234567890" target="_blank" class="icon"><i class="fab fa-whatsapp"></i></a>
+    </footer>    
+</body>
+
+    <script src="slider.js"></script>
+
+</body>
+</html>
